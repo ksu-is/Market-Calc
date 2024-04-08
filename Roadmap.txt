@@ -1,4 +1,4 @@
-Week 1 
+Sprint 2 
 [] Survey underlying resources that will be utilized
       [] Analyze library capabilities of:
             [] Market Data API libraries
@@ -6,15 +6,13 @@ Week 1
 [] Determine necessary parameters for utility
     [] GUI frameworks
 
-Week 2
+Sprint 3
 [] Application of libraries: 
     [] Fork Repositories
     [] Clone Repositories
     [] GUI Framework
     [] Market Data API
 
-
-Week 3
 [] Integrate library utilities:
 	[] GUI framework
 	[] Market Data API
