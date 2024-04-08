@@ -1,0 +1,24 @@
+Week 1 
+[] Survey underlying resources that will be utilized
+      [] Analyze library capabilities of:
+            [] Market Data API libraries
+
+[] Determine necessary parameters for utility
+    [] GUI frameworks
+
+Week 2
+[] Application of libraries: 
+    [] Fork Repositories
+    [] Clone Repositories
+    [] GUI Framework
+    [] Market Data API
+
+
+Week 3
+[] Integrate library utilities:
+	[] GUI framework
+	[] Market Data API
+
+[] Testing:
+	[] Unit Testing
+  [] Integration Testing
