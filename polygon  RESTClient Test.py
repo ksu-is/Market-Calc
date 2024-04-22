@@ -35,6 +35,20 @@ bars = []
 # appending bars to list
 
 for entry in aggs:
-	bars.append(bar(entry.timestamp, entry.open, entry.high, entry.low, entry.close, entry.volume))
+	bars.append([entry.timestamp, entry.open, entry.high, entry.low, entry.close, entry.volume])
+	#bars.append(bar(entry.timestamp, entry.open, entry.high, entry.low, entry.close, entry.volume))
+
+import csv
+
+# field names 
+fields = ['Date' ,'Open' ,'High' ,'Low' ,'Close' ,'Volume'] 
+
+
+with open('GFG', 'w') as f:
 	
-mpf.plot(bars)
+	# using csv.writer method from CSV package
+	write = csv.writer(f)
+	
+	write.writerow(fields)
+	write.writerows(bars)
+

@@ -9,3 +9,4 @@ daily.tail(3)
 
 import mplfinance as mpf
 mpf.plot(daily)
+
