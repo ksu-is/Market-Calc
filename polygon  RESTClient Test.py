@@ -9,7 +9,6 @@ aggs = []
 for a in client.list_aggs(ticker=ticker, multiplier=1, timespan="minute", from_="2024-01-01", to="2024-03-13", limit=50000):
     aggs.append(a)
 
-print(aggs)
 
 # Python3 code here creating class
 class bar:
@@ -21,10 +20,19 @@ class bar:
 		self.close = close
 		self.volume = volume
 
+	def __str__(self):
+		return f"{self.date}{self.open}"
+	
+	def __repr__(self):
+		return str(self)
+
+		
 # creating list
-list = []
+bars = []
 
-# appending instances to list
-list.append(bar('Akash', 2))
+# appending bars to list
 
-
+for entry in aggs:
+	bars.append(bar(entry.timestamp, entry.open, entry.high, entry.low, entry.close, entry.volume))
+	
+print(bars)
