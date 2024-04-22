@@ -1,4 +1,6 @@
 from polygon import RESTClient
+import mplfinance as mpf
+import pandas as pd
 
 client = RESTClient(api_key="mk2WSHh93k_lKEW1JyEZUxFZDXVZkCWA")
 
@@ -35,4 +37,4 @@ bars = []
 for entry in aggs:
 	bars.append(bar(entry.timestamp, entry.open, entry.high, entry.low, entry.close, entry.volume))
 	
-print(bars)
+mpf.plot(bars)
