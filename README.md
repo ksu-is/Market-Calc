@@ -1,4 +1,4 @@
-# Market Calculator GUI
+# Market Visualizer GUI
 An app built to visualize historical market data, the user will provide the ticker symbol for their
 firm of interest, any date interval that doesn't exceed two years ago.
 The app will populate the Visualizer field with a default candlestick view, along with Line view and
